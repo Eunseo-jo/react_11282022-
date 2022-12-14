@@ -42,7 +42,7 @@ header{
 
 
 }
-.todo-list{
+.todolist_container{
     display: flex;
     list-style-type: none;
     padding:10px;
@@ -51,24 +51,51 @@ header{
     border: 2px #e6e2d3 solid;
     border-radius: 10px;
     align-items: stretch;
-    min-height: 250px;
+    min-height: 300px;
 }
 
-.todo-list li{
+.todo-list, .finished
+{
+    display: block;
+    padding: 3px;
+    text-align: center;
+    color: gray;
+}
+
+.todo-list li, .finished li{
     
     background-color: #e6e2d3;
     border-radius: 5px;
     padding:10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    
+}
+.buttons
+{
+    display: flex;
+    
+}
+
+span
+{
+    text-align: center;
+    align-items: center;
+}
+.todo-finished li{
+    background-color: #e6e2d3;
 }
 
 .btn--delete
 {
+    margin-left: 3px;
     border: none;
     background-color: #c94c4c;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
 }
 
@@ -96,4 +123,11 @@ header{
 .btn--editFin
 {
     display: none;
+}
+.btn--edit
+{
+    border: none;
+    background-color: #008cba;
+    border-radius: 3px;
+    color: white;
 }
